@@ -1,0 +1,175 @@
+/* body style */
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+  background-color: lightblue;
+  margin: 0px 0px;
+  padding: 0;
+}
+
+/* svg div style */
+.svgDiv{
+    height: 100vh;
+    display: flex;  /* Enables flexbox */
+    flex-direction: column;  /* Stack children vertically */
+    justify-content: center;  /* Center vertically */
+    align-items: center;  /* Center horizontally */
+}
+
+/* svg postioning */
+svg{
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+/* centering buttons */
+.buttons{
+  justify-content: center;
+  display:flex;
+  align-items: center;
+  z-index: 2;
+}
+
+svg, p, .buttons {
+  justify-content: unset; /* Remove justification */
+  align-items: unset;  /* Remove alignment */
+}
+
+
+
+/* nav bar style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+ /* end of nav bar style */
+
+
+/* js styles */
+
+/* start button */
+#start{
+  padding: 1rem 2.5rem;
+  border:none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: green;
+  color: white;
+  font-size:16px;
+  margin:4px 2px;
+  transition-duration: 0.6s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#start:hover{
+  background-color: lightgreen; /* Green */
+  color: black;
+  border-width: 7px;
+  border-style: inset;
+  border-color: black;
+}
+
+/* pause button */
+#pause{
+  padding: 1rem 2.5rem;
+  border:none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #CEBD25;
+  color: white;
+  font-size:16px;
+  margin:4px 2px;
+  transition-duration: 0.6s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#pause:hover{
+  background-color: yellow;
+  color: black;
+  border-width: 7px;
+  border-style: inset;
+  border-color: black;
+}
+
+/* stop button */
+#stop{
+  padding: 1rem 2.5rem;
+  border:none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: red;
+  color: white;
+  font-size:16px;
+  margin:4px 2px;
+  transition-duration: 0.6s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#stop:hover{
+  background-color: crimson;
+  color: black;
+  border-width: 7px;
+  border-style: inset;
+  border-color: black;
+}
+
+/* timer itself */
+#timer{
+  z-index: 2;
+  margin: 0 auto;
+  font-family: Orbitron;
+  color: white;
+  background-color: black;
+  background-size: 10px;
+  /*centering */
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 40px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition-duration: 0.6;
+}
+
+#timer:hover{
+  color: yellow;
+}
+
+/* change timer colour */
+.tlow{
+  color:red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
