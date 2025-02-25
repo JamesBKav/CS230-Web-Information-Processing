@@ -14,7 +14,7 @@ function tick(){
         timeInSecs--;
     } else if(timeInSecs === 0){
         clearInterval(ticker);
-        alert("have a break dumbahh");
+        alert("Time Up! Have a break :)");
     }
 
     var mins = Math.floor(timeInSecs / 60);
