@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.jpg">
+</head>
+<body class="home">
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Weather App</a>
+            <a href="./HTML Pages/temperature.html">Temperature</a>
+            <a href="./HTML Pages/humidity.html">Humidity</a>
+            <a href="./HTML Pages/uv.html">UV Index</a>
+            <a href="./HTML Pages/wind.html">Wind Speed</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Weather App</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="fetchWeather()">Get Weather</button>
+    </header>
+
+    <script src="./script.js"></script>
+</body>
+</html>
